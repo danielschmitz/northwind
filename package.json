@@ -1,0 +1,18 @@
+{
+    "name": "northwind",
+    "version": "2.0.0",
+    "description": "A northwind api",
+    "main": "server.js",
+    "repository": "https://github.com/danielschmitz/northwind.git",
+    "author": "Daniel Schmitz <danieljfa@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+      "now-deploy": "now -p",
+      "now-start": "node server.js"
+    },
+    "dependencies": {
+      "faker": "^4.1.0",
+      "json-server": "^0.12.2"
+    }
+  }

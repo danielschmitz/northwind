@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <title>Northwind JSON Server</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header style="background-color: #def">
+    <div class="container">
+      <h3>Northwind JSON Server</h3>
+    </div>
+  </header>
+  <main>
+
+    <div class="container">
+      <img src="northwind_graph_simple.png" alt="" width="500px" style="display:float;float:right">
+      
+      <p>
+        Welcome to the Northwind API Service
+        <br> ✧*｡٩(ˊᗜˋ*)و✧*｡
+      </p>
+
+      <p>
+        ZEIT now - Version 2.0
+      </p>
+
+
+      <div id="resources"></div>
+
+      <p>
+        To access and modify resources, you can use any HTTP method
+        <br>
+        <code>GET</code>
+        <code>POST</code>
+        <code>PUT</code>
+        <code>PATCH</code>
+        <code>DELETE</code>
+        <code>OPTIONS</code>
+      </p>
+
+      <h4>Example</h4>
+      <p>
+        <ul>
+          <li>
+            <code>GET northwind.now.sh/api/categories </code> Get all categories </li>
+          <li>
+            <code>GET northwind.now.sh/api/categories/1 </code> Get a category by Id 1</li>
+          <li>
+            <code>POST northwind.now.sh/api/categories </code> Adds a new category </li>
+          <li>
+            <code>PUT northwind.now.sh/api/categories </code> Edit a category </li>
+          <li>
+            <code>DELETE northwind.now.sh/api/categories/1 </code> Delete a category with Id 1</li>
+        </ul>
+      </p>
+
+      <div id="custom-routes"></div>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>
+        Made with ❤️ by
+        <a href="https://github.com/danielschmitz/northwind">Daniel Schmitz</a>
+        <span style="float:right">
+          Thanks to
+          <a href="https://now.sh">Now.sh</a> service
+        </span>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/mithril/mithril.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
